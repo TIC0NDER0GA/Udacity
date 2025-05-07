@@ -8,6 +8,7 @@ class App extends Component {
   state = {
     contacts: []
   }
+  
   componentDidMount() {
     ContactsAPI.getAll().then((contacts) => {
       console.log(contacts)
